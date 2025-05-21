@@ -1,0 +1,5 @@
+<?php
+interface GUIFactory {
+    public function createButton(): Button;
+    public function createCheckbox(): Checkbox;
+}
