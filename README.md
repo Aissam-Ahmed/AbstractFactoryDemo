@@ -1,6 +1,6 @@
-# 🧱 PatternForge
+# 🧱 AbstractFactoryDemo
 
-**PatternForge** is a simple and educational PHP application that demonstrates the **Abstract Factory** design pattern by creating UI components (like Buttons and Checkboxes) for different visual themes (Light and Dark).
+**AbstractFactoryDemo** is a simple and educational PHP application that demonstrates the **Abstract Factory** design pattern by creating UI components (like Buttons and Checkboxes) for different visual themes (Light and Dark).
 
 ---
 
