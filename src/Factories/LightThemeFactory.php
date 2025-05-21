@@ -1,7 +1,13 @@
 <?php
-require_once __DIR__ . '/../interfaces/GUIFactory.php';
-require_once __DIR__ . '/../products/buttons/LightButton.php';
-require_once __DIR__ . '/../products/checkboxes/LightCheckbox.php';
+
+namespace App\Factories;
+
+use App\Interfaces\Button;
+use App\Interfaces\Checkbox;
+use App\Interfaces\GUIFactory;
+use App\Products\Buttons\LightButton;
+use App\Products\Checkboxs\LightCheckbox;
+
 
 class LightThemeFactory implements GUIFactory {
     public function createButton(): Button {

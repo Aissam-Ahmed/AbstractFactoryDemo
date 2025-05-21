@@ -1,5 +1,10 @@
 <?php
-require_once __DIR__ . '/../../interfaces/Checkbox.php';
+
+
+namespace App\Products\Checkboxs;
+
+use App\Interfaces\Checkbox;
+
 
 class LightCheckbox implements Checkbox {
     public function render(): string {

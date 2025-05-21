@@ -1,7 +1,12 @@
 <?php
-require_once __DIR__ . '/../interfaces/GUIFactory.php';
-require_once __DIR__ . '/../products/buttons/DarkButton.php';
-require_once __DIR__ . '/../products/checkboxes/DarkCheckbox.php';
+namespace App\Factories;
+
+use App\Interfaces\GUIFactory;
+use App\Products\Buttons\DarkButton;
+use App\Products\Checkboxes\DarkCheckbox;
+use App\Interfaces\Button;
+use App\Interfaces\Checkbox;
+
 
 class DarkThemeFactory implements GUIFactory {
     public function createButton(): Button {

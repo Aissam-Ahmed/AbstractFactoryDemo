@@ -1,5 +1,9 @@
 <?php
-require_once __DIR__ . '/../../interfaces/Checkbox.php';
+
+namespace App\Products\Checkboxes;
+
+use App\Interfaces\Checkbox;
+
 
 class DarkCheckbox implements Checkbox {
     public function render(): string {

@@ -1,5 +1,12 @@
 <?php
-require_once __DIR__ . '/interfaces/GUIFactory.php';
+
+namespace App;
+
+use App\Interfaces\Button;
+use App\Interfaces\Checkbox;
+use App\Interfaces\GUIFactory;
+
+
 
 class Application {
     private Button $button;

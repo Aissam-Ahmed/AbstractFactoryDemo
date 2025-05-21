@@ -1,19 +1,21 @@
 <?php
-require_once __DIR__ . '/factories/DarkThemeFactory.php';
-require_once __DIR__ . '/factories/LightThemeFactory.php';
-require_once __DIR__ . '/Application.php';
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use App\Application;
+use App\Factories\DarkThemeFactory;
+use App\Factories\LightThemeFactory;
+
+
+
 
 function getUserPreferredTheme(): string {
-    return 'dark'; // أو 'light'
+    return 'dark'; // or 'light'
 }
 
 $theme = getUserPreferredTheme();
 
-if ($theme === 'dark') {
-    $factory = new DarkThemeFactory();   
-} else {
-    $factory = new LightThemeFactory();
-}
+$factory = ($theme === 'dark') ? new DarkThemeFactory() : new LightThemeFactory();
 
 $app = new Application($factory);
 $app->renderUI();

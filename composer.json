@@ -1,0 +1,14 @@
+{
+    "name": "aissam/abstractfactorydemo",
+"autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+    "authors": [
+        {
+            "name": "Aissam Ait Ahmed Ouhamou"
+        }
+    ],
+    "require": {}
+}
